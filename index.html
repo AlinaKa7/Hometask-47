@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn,
+        .comment-btn {
+            cursor: pointer;
+            background-color: rgb(28, 213, 213);
+            border-radius: 3px;
+            border: none;
+            padding: 7px;
+            width: 80px;
+            color: rgb(255, 255, 255);
+        }
+
+        .comment-btn {
+            width: 120px;
+        }
+
+        .btn:hover,
+        .comment-btn:hover {
+            background-color: rgb(96, 238, 238);
+        }
+
+        .search {
+            border-radius: 3px;
+            border-color: cadetblue;
+            padding: 5px;
+            width: 50px;
+        }
+
+        .idContainer,
+        .comment-container {
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="post-id">Enter post ID from 1 to 100</label>
+    <input type="number" id="post-id" class="search" name="post" min="1" max="100">
+    <button class="btn" onclick="displayPost()">Search</button>
+
+    <div class="idContainer"></div>
+
+    <script src="index.js"></script> 
+
+
+</body>
+</html>
